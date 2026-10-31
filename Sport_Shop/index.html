@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPORT SHOP | Sports Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-strip">MIỄN PHÍ VẬN CHUYỂN CHO ĐƠN HÀNG TỪ 799.000₫</div>
+  <header class="header">
+    <a class="logo" href="#home"><span class="logo-mark">S</span> SPORT SHOP</a>
+    <nav class="nav" id="nav">
+      <a class="nav-link active" href="#home">Trang chủ</a>
+      <a class="nav-link" href="#about">Giới thiệu</a>
+      <a class="nav-link" href="#categories">Thể loại</a>
+      <a class="nav-link" href="#products">Sản phẩm</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cartButton" aria-label="Giỏ hàng">🛒 <span class="cart-count" id="cartCount">0</span></button>
+      <button class="login-btn" id="openLogin">Đăng nhập</button>
+      <button class="menu-btn" id="menuButton" aria-label="Mở menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-line"></span> BỨT PHÁ GIỚI HẠN CỦA BẠN</span>
+        <h1>Chơi hết mình.<br><span>Sống năng động.</span></h1>
+        <p>Trang bị thể thao chất lượng dành cho mọi mục tiêu. Tìm cảm hứng, chọn thiết bị phù hợp và bắt đầu hành trình của bạn.</p>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#products">Khám phá ngay <span>↗</span></a>
+          <a class="text-btn" href="#about">Tìm hiểu thêm <span>→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>500+</strong><small>Sản phẩm</small></div>
+          <div><strong>10k+</strong><small>Khách hàng</small></div>
+          <div><strong>4.9/5</strong><small>Đánh giá</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-circle"></div>
+        <div class="hero-label"><span>NEW COLLECTION</span><strong>MOVE<br>YOUR WAY.</strong></div>
+        <img class="hero-image" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=85" alt="Vận động viên tập luyện">
+        <div class="floating-card"><span class="floating-icon">✦</span><div><strong>Performance gear</strong><small>Thiết kế cho chuyển động</small></div></div>
+        <span class="hero-number">01 / 04</span>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit"><span class="benefit-icon">🚚</span><div><strong>Giao hàng nhanh</strong><small>Toàn quốc 2–4 ngày</small></div></div>
+      <div class="benefit"><span class="benefit-icon">✓</span><div><strong>Chính hãng</strong><small>Cam kết chất lượng</small></div></div>
+      <div class="benefit"><span class="benefit-icon">↺</span><div><strong>Đổi trả dễ dàng</strong><small>Trong vòng 7 ngày</small></div></div>
+      <div class="benefit"><span class="benefit-icon">♡</span><div><strong>Hỗ trợ tận tâm</strong><small>Luôn sẵn sàng giúp bạn</small></div></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading">
+        <div><span class="eyebrow">CHỌN MÔN THỂ THAO CỦA BẠN</span><h2>Mua sắm theo <span>thể loại</span></h2></div>
+        <a href="#products" class="view-all">Xem tất cả <span>↗</span></a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card cat-running" data-category="Chạy bộ"><span class="cat-number">01</span><span class="cat-emoji">👟</span><span class="cat-name">Chạy bộ</span><span class="cat-arrow">↗</span></button>
+        <button class="category-card cat-gym" data-category="Gym"><span class="cat-number">02</span><span class="cat-emoji">🏋️</span><span class="cat-name">Gym & Fitness</span><span class="cat-arrow">↗</span></button>
+        <button class="category-card cat-football" data-category="Bóng đá"><span class="cat-number">03</span><span class="cat-emoji">⚽</span><span class="cat-name">Bóng đá</span><span class="cat-arrow">↗</span></button>
+        <button class="category-card cat-accessories" data-category="Phụ kiện"><span class="cat-number">04</span><span class="cat-emoji">🎒</span><span class="cat-name">Phụ kiện</span><span class="cat-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading">
+        <div><span class="eyebrow">ĐƯỢC YÊU THÍCH NHẤT</span><h2>Sản phẩm <span>nổi bật</span></h2></div>
+        <div class="product-tools">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Tìm sản phẩm..."></label>
+          <select id="sortSelect" aria-label="Sắp xếp sản phẩm"><option value="default">Sắp xếp</option><option value="low">Giá thấp đến cao</option><option value="high">Giá cao đến thấp</option></select>
+        </div>
+      </div>
+      <div class="filter-row">
+        <button class="filter-chip selected" data-filter="Tất cả">Tất cả</button>
+        <button class="filter-chip" data-filter="Chạy bộ">Chạy bộ</button>
+        <button class="filter-chip" data-filter="Gym">Gym</button>
+        <button class="filter-chip" data-filter="Bóng đá">Bóng đá</button>
+        <button class="filter-chip" data-filter="Phụ kiện">Phụ kiện</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promo" id="about">
+      <div class="promo-art"><div class="promo-orbit"></div><span class="promo-shoe">👟</span><span class="promo-star">✦</span><span class="promo-caption">MOVE<br>BETTER.</span></div>
+      <div class="promo-copy"><span class="eyebrow">VỀ SPORT SHOP</span><h2>Mỗi ngày là một<br><span>cơ hội bứt phá.</span></h2><p>SPORT SHOP đồng hành cùng bạn bằng những sản phẩm thể thao tiện dụng, phong cách và phù hợp với nhịp sống năng động.</p><a href="#products" class="primary-btn">Tìm đồ phù hợp <span>↗</span></a></div>
+    </section>
+
+    <section class="newsletter">
+      <div><span class="eyebrow">NHẬN TIN MỚI NHẤT</span><h2>Sẵn sàng cho <span>chặng tiếp theo?</span></h2><p>Đăng ký nhận tin để cập nhật bộ sưu tập và ưu đãi mới.</p></div>
+      <form id="newsletterForm" class="newsletter-form"><input type="email" placeholder="Email của bạn" required><button type="submit">Đăng ký <span>→</span></button></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home"><span class="logo-mark">S</span> SPORT SHOP</a>
+    <p>Chuyển động theo cách của bạn.</p>
+    <div class="footer-links"><a href="#home">Trang chủ</a><a href="#about">Giới thiệu</a><a href="#categories">Thể loại</a><a href="#products">Sản phẩm</a></div>
+    <small>© 2026 SPORT SHOP. Website bài tập minh họa.</small>
+  </footer>
+
+  <div class="modal-backdrop" id="authModal" aria-hidden="true">
+    <div class="auth-modal">
+      <button class="close-modal" id="closeAuth" aria-label="Đóng">×</button>
+      <a class="logo modal-logo" href="#home"><span class="logo-mark">S</span> SPORT SHOP</a>
+      <div class="auth-tabs"><button class="auth-tab active" data-mode="login">Đăng nhập</button><button class="auth-tab" data-mode="register">Tạo tài khoản</button></div>
+      <h2 id="authTitle">Chào mừng trở lại!</h2><p class="auth-subtitle" id="authSubtitle">Đăng nhập để tiếp tục mua sắm.</p>
+      <form id="authForm">
+        <label class="form-label">Email<input type="email" id="authEmail" placeholder="name@example.com" required></label>
+        <label class="form-label">Mật khẩu<input type="password" id="authPassword" placeholder="Tối thiểu 6 ký tự" minlength="6" required></label>
+        <label class="form-label hidden" id="confirmWrap">Nhập lại mật khẩu<input type="password" id="authConfirm" placeholder="Nhập lại mật khẩu" minlength="6"></label>
+        <button class="primary-btn auth-submit" type="submit" id="authSubmit">Đăng nhập <span>→</span></button>
+      </form>
+      <p class="auth-message" id="authMessage" role="status"></p>
+      <small class="demo-note">Bản demo giao diện: thông tin tài khoản chỉ lưu trong trình duyệt này.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
